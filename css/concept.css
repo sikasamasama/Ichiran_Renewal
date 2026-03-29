@@ -1,0 +1,281 @@
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+small {
+    font-size: 16px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+#concept {
+    background-color: #E9DBBF;
+
+    .FV {
+        position: relative;
+        height: 587px;
+
+        h1 {
+            position: absolute;
+            top: 318px;
+            left: 70px;
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(../img/fv-kodawari.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.2;
+        }
+    }
+
+    .kodawari-text {
+        margin: 105px auto 200px;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 55px;
+
+        }
+
+        p {
+            line-height: 40px;
+
+            span {
+                font-size: 32px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .ganso {
+        margin: 0 auto 200px;
+        width: 90%;
+        max-width: 1132px;
+        height: 827px;
+        position: relative;
+        color: white;
+        font-size: 24px;
+
+        h2 {
+            padding-top: 92px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .accordion-content {
+            display: none;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(../img/donburi.png);
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        button {
+            display: flex;
+            justify-content: space-between;
+            justify-self: center;
+            width: 536px;
+            height: 68px;
+            border-bottom: white solid 1px;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+
+        .accordion:last-of-type button{
+            border: none;
+        }
+        .title {
+            margin-left: 20px;
+        }
+        .icon {
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+
+    .soup {
+        max-width: 1300px;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        >div {
+            display: grid;
+            grid-template-areas: "img Headline"
+                "img text";
+            grid-template-columns: minmax(200px, 421px) minmax(0, 1fr);
+            gap: 15px 100px;
+            width: 100%;
+            max-width: 1078px;
+
+            img {
+                grid-area: img;
+                max-width: 100%;
+            }
+
+            h3 {
+                grid-area: Headline;
+                align-self: end;
+            }
+
+            p {
+                grid-area: text;
+            }
+        }
+
+        .dashi {
+            margin-bottom: 105px;
+        }
+
+        .soup-ladle {
+            grid-template-areas: "Headline img"
+                "text img";
+            grid-template-columns: minmax(0, 1fr) minmax(200px, 421px);
+            justify-self: end;
+            margin-bottom: 105px;
+        }
+    }
+
+    .forest {
+        /* background-color: rgba(0, 255, 0, 0.5); */
+        margin: 200px auto 105px;
+        width: 1300px;
+        height: 409px;
+        position: relative;
+        padding: 86px 83px 78px;
+
+        button {
+            font-size: 18px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url(../img/ichiran-forest.png);
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        h2 {
+
+            margin-bottom: 52px;
+        }
+
+        p {
+            margin-bottom: 45px;
+        }
+
+        button {
+            width: 221px;
+            height: 52px;
+            color: white;
+            border-radius: 50px;
+            background: #00712F;
+            box-shadow: 0 2px 4px 0 rgba(109, 109, 109, 0.25);
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 2000;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.modal-overlay.closing {
+    opacity: 0;
+}
+
+.modal-window {
+    background-size: 1132px 827px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1132px;
+    height: 827px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 176px 0 0 192px;
+    position: relative;
+    z-index: 2;
+
+    h3 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.modal-close {
+    width: 55px;
+    height: 55px;
+    border: 0;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 1;
+    color: white;
+    position: absolute;
+    right: 130px;
+    top: 180px;
+    z-index: 2;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 54px 0 0 192px;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+
+    p {
+        margin: 0;
+        line-height: 48px;
+    }
+}
