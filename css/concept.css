@@ -76,7 +76,7 @@ small {
         position: relative;
         color: white;
         font-size: 24px;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.5s ease;
 
         h2 {
             padding-top: 92px;
@@ -97,7 +97,7 @@ small {
             z-index: -1;
         }
 
-        button {
+        .accordion>button {
             display: flex;
             justify-content: space-between;
             justify-self: center;
@@ -108,12 +108,14 @@ small {
             align-items: center;
         }
 
-        .accordion:last-of-type button{
+        .last-accordion>button{
             border: none;
         }
+
         .title {
             margin-left: 20px;
         }
+
         .icon {
             font-size: 32px;
             font-weight: bold;
@@ -211,16 +213,20 @@ small {
 }
 
 .detail-view {
-    margin: 0 auto 200px;
-    width: 90%;
-    max-width: 1132px;
-    height: 827px;
-    position: relative;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     background-size: 1132px 827px;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
-    transition: opacity 0.1s ease;
+    transition: opacity 0.5s ease;
+    z-index: 10;
+}
+
+.detail-view.showing {
+    transition: opacity 1s ease;
 }
 
 .detail-view.show {
@@ -259,77 +265,6 @@ small {
 }
 
 .detail-body {
-    padding: 54px 0 0 192px;
-    color: white;
-    font-size: 18px;
-    position: relative;
-    z-index: 1;
-
-    p {
-        margin: 0;
-        line-height: 48px;
-    }
-}
-
-.modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    z-index: 2000;
-    opacity: 1;
-    transition: opacity 0.2s ease;
-}
-
-.modal-overlay.closing {
-    opacity: 0;
-}
-
-.modal-window {
-    background-size: 1132px 827px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1132px;
-    height: 827px;
-    overflow-y: auto;
-    position: relative;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 176px 0 0 192px;
-    position: relative;
-    z-index: 2;
-
-    h3 {
-        margin: 0;
-        font-size: 20px;
-        font-weight: 700;
-        color: white;
-    }
-}
-
-.modal-close {
-    width: 55px;
-    height: 55px;
-    border: 0;
-    cursor: pointer;
-    font-size: 32px;
-    line-height: 1;
-    color: white;
-    position: absolute;
-    right: 130px;
-    top: 180px;
-    z-index: 2;
-    text-align: center;
-}
-
-.modal-body {
     padding: 54px 0 0 192px;
     color: white;
     font-size: 18px;
