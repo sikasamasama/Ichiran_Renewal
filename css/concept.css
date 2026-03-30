@@ -76,6 +76,7 @@ small {
         position: relative;
         color: white;
         font-size: 24px;
+        transition: opacity 0.2s ease;
 
         h2 {
             padding-top: 92px;
@@ -206,6 +207,67 @@ small {
             font-weight: 700;
             text-align: center;
         }
+    }
+}
+
+.detail-view {
+    margin: 0 auto 200px;
+    width: 90%;
+    max-width: 1132px;
+    height: 827px;
+    position: relative;
+    background-size: 1132px 827px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.detail-view.show {
+    opacity: 1;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 176px 0 0 192px;
+    position: relative;
+    z-index: 2;
+
+    h3 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.detail-close {
+    width: 55px;
+    height: 55px;
+    border: 0;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 1;
+    color: white;
+    position: absolute;
+    right: 130px;
+    top: 180px;
+    z-index: 2;
+    text-align: center;
+}
+
+.detail-body {
+    padding: 54px 0 0 192px;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+
+    p {
+        margin: 0;
+        line-height: 48px;
     }
 }
 
