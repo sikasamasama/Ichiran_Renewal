@@ -6,6 +6,7 @@ hamburger.addEventListener('click', () => {
   nav.classList.toggle('open');
 });
 
+
 // スクロールを検知してクラスをつける設定
 const observerOptions = {
     root: null,

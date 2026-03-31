@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>店舗一覧 | 一蘭</title>
-    <link rel="stylesheet" href="../css/destyle.css">
-    <link rel="preconnect" href="../css/common.css">
     <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/shop.js" defer></script>
+    <script src="../js/concept.js" defer></script>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap"
+      rel="stylesheet"
+    />
 </head>
+
 <body> 
-    <header class="main-header">
-        <div class="header-overlay">
-            <div class="header-container">
-                <div class="header-nav">
-                    <img src="../img/Ellipse 15.png" alt="一蘭 ロゴ" class="logo">
-                    <button class="menu-trigger">
-                        <img src="../img/ci_hamburger-md.png" alt="メニュー">
-                    </button>
-                </div>
-                <h1 class="header-title">店舗一覧</h1>
-            </div>
+    <header class="header-wrapper">
+      <h1>
+        <a href="../index.html"><img src="../img/Ellipse 15.png " alt="ロゴ" /></a>
+      </h1>
+
+      <div class="nav-warp">
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#first">初めてのお客様へ</a></li>
+            <li><a href="../01menu/index.html">メニュー</a></li>
+            <li><a href="../02shop/index.html">店舗検索</a></li>
+            <li><a href="../04concept/index.html">こだわり</a></li>
+            <li><a href="#">新着情報</a></li>
+            <li><a href="#">よくある質問</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      
     </header>
 
     <main class="shop-container">
+        <h1 class="header-title">店舗一覧</h1>
         <nav class="area-nav">
             <button class="area-btn active">九州</button>
             <button class="area-btn">中国</button>
@@ -41,7 +63,9 @@
                     <img src="../img/Rectangle 56.png" alt="那の川店">
                 </div>
                 <div class="shop-info">
+                    <a href="../03shop-detail/index.html" class="shop-link">
                     <h3>那の川店 〜発祥の店〜</h3>
+                    </a>
                     <p>〒815-0081<br>福岡県福岡市南区那の川2-2-10</p>
                 </div>
             </article>
@@ -51,7 +75,9 @@
                     <img src="../img/Union100.png" alt="小戸店">
                 </div>
                 <div class="shop-info">
+                    <a href="#" class="shop-link">
                     <h3>小戸店 〜糸島店ラー麦100%麺〜</h3>
+                    </a>
                     <p>〒819-0001<br>福岡県福岡市西区小戸3-2-5</p>
                 </div>
             </article>
@@ -61,7 +87,9 @@
                     <img src="../img/Rectangle 58.png" alt="天神店">
                 </div>
                 <div class="shop-info">
+                     <a href="#" class="shop-link">
                     <h3>天神店</h3>
+                    </a>
                     <p>〒810-0001<br>福岡県福岡市中央区天神1-10-15<br>西鉄福岡駅より徒歩2分、地下鉄天神駅より徒歩3分</p>
                 </div>
             </article>
@@ -71,7 +99,9 @@
                     <img src="../img/Rectangle 61.png" alt="キャナルシティ博多店">
                 </div>
                 <div class="shop-info">
+                    <a href="#" class="shop-link">
                     <h3>キャナルシティ博多店 〜釜だれとんこつラーメン〜</h3>
+                    </a>
                     <p>〒812-0018<br>福岡県福岡市博多区住吉1-2-22 ノースビル<br>キャナル運河 ラーメンスタジアム2</p>
                 </div>
             </article>
@@ -81,7 +111,9 @@
                     <img src="../img/Rectangle 60.png" alt="博多店サンプラザ地下街内">
                 </div>
                 <div class="shop-info">
+                    <a href="#" class="shop-link">
                     <h3>博多店サンプラザ地下街内</h3>
+                    </a>
                     <p>〒812-0011<br>福岡県福岡市博多区博多駅前2-20-1<br>博多センタービルB2F</p>
                 </div>
             </article>
@@ -91,7 +123,9 @@
                     <img src="../img/Rectangle 62.png" alt="一蘭本社総本店">
                 </div>
                 <div class="shop-info">
+                    <a href="#" class="shop-link">
                     <h3>一蘭本社総本店</h3>
+                    </a>
                     <p>〒810-0801<br>福岡県福岡市博多区中洲5-3-2</p>
                 </div>
             </article>
@@ -101,7 +135,9 @@
                     <img src="../img/Rectangle 63.png" alt="西通り店">
                 </div>
                 <div class="shop-info">
+                    <a href="#" class="shop-link">
                     <h3>西通り店 〜釜だれとんこつラーメン〜</h3>
+                    </a>
                     <p>〒810-0041<br>福岡県福岡市中央区大名2-1-57 1F</p>
                 </div>
             </article>
@@ -111,7 +147,9 @@
                     <img src="../img/Rectangle 64.png" alt="一蘭の森店">
                 </div>
                 <div class="shop-info">
+                    <a href="#" class="shop-link">
                     <h3>一蘭の森店</h3>
+                    </a>
                     <p>〒819-1306<br>福岡県糸島市志摩松隈256-10</p>
                 </div>
             </article>
@@ -149,5 +187,6 @@
     </div>
     <p class="copyright">© 2026 Ichiran Co., Ltd. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
