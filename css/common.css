@@ -1,3 +1,29 @@
+/* フォント */
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+small {
+    font-size: 16px;
+}
+
+
+
 /* --- フッター --- */
 .main-footer {
     background-color: #ad8b65; /* フッターの茶色 */

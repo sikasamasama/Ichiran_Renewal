@@ -1,0 +1,25 @@
+body{
+    background-color:#E9DBBF;
+    
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    
+}
+
+.midasi{
+    display: flex;
+}
+.message{
+    text-align: center;
+    margin: 0 auto ;
+}
