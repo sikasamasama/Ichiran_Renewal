@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>メニュー | 天然とんこつラーメン 一蘭</title>
-    <link rel="stylesheet" href="../css/destyle.css">
-    <link rel="preconnect" href="../css/common.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <script src="../js/script.js" defer></script>
-    <script src="../js/concept.js" defer></script>
 
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/concept.js" defer></script>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
 
-<header class="main-header">
-    <div class="header-image-container">
-        <img src="../img/Rectangle 2.png" alt="券売機 背景" class="bg-photo">
-        
-        <div class="header-overlay">
-            <div class="header-container">
-                <div class="header-nav">
-                    <img src="../img/Ellipse 15.png" alt="一蘭 ロゴ" class="logo">
-                    <button class="menu-trigger">
-                        <img src="../img/ci_hamburger-md.png" alt="メニュー">
-                    </button>
-                </div>
+    <header class="header-wrapper">
+      <h1>
+        <a href="../index.html"><img src="../img/Ellipse 15.png " alt="ロゴ" /></a>
+      </h1>
 
-                <div class="hero-title-area">
-                    <h1>メニュー</h1>
-                </div>
+      <div class="nav-warp">
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-            </div>
-        </div>
-    </div>
-</header>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#first">初めてのお客様へ</a></li>
+            <li><a href="../01menu/index.html">メニュー</a></li>
+            <li><a href="../02shop/index.html">店舗検索</a></li>
+            <li><a href="../04concept/index.html">こだわり</a></li>
+            <li><a href="#">新着情報</a></li>
+            <li><a href="#">よくある質問</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main class="menu-container">
         
