@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-    <html lang="ja">
+<!doctype html>
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,7 +42,7 @@
 
     <main>
       <section class="fv">
-        <img src="img/tempImageSHlapt 1.png" alt="" />
+        <img src="img/tempImageSHlapt 1.png" alt="背景画像" />
         <div class="ttl">
           <h1>多忙な日常を離れ、<br />集中して旨味に浸れる。</h1>
         </div>
@@ -59,8 +59,10 @@
         </p>
       </section>
 
-      <section>
-        <iframe width="1455" height="818"
+      <section class="movie">
+        <iframe
+          width="1455"
+          height="818"
           src="https://www.youtube.com/embed/htTpQq34aHc"
           title="【一蘭公式】初めて一蘭へご来店のお客様へ【ご利用のご案内】"
           frameborder="0"
@@ -86,36 +88,63 @@
             追加のご注文はカウンター横にある紙にご記入の上、注文も可能です。
             お気軽にお申し付けください。
           </p>
-          <button>一覧を見る</button>
+          <button><a href="01menu/index.html">一覧を見る</a></button>
         </div>
 
-        <div>
-          <img src="img/Group 55.png" alt="">
-        </div>
-
+        <div class="hands"></div>
       </section>
 
+      <section class="shop">
+        <div class="shop-img"></div>
+        <div class="shop-text">
+          <h2>店舗一覧</h2>
+          <p>
+            一蘭は日本と海外にも店舗を構えております。<br />
+            職場の近く、家の近く、学校の近くなど探してみましょう。
+          </p>
+          <button><a href="02shop/index.html">店舗を探す</a></button>
+        </div>
+      </section>
+
+      <section class="commitment">
+        <div class="commitment-img"></div>
+        <div class="commitment-text">
+          <h2>こだわり</h2>
+          <p>
+            一蘭は、天然とんこつラーメンにこだわった専門店です。<br />
+            一蘭が始めた５つの元祖とともに愛されている理由がここにあります。
+          </p>
+          <button><a href="04concept/index.html">美味しい秘密はここ</a></button>
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
-        <div class="footer-inner">
-            <div class="footer-logo-info">
-                <img src="img/ichiran_logomark_r 1.png" alt="一蘭" class="footer-logo">
-                <p>株式会社一蘭 1960年（昭和35年）<br>〒810-0801 福岡市博多区中洲5-3-2 一蘭本社ビル</p>
-                <div class="sns-icons">
-                    <img src="img/SNSｓ.png" alt="SNSアイコン">
-                </div>
-            </div>
-            <div class="footer-links">
-                <p class="links-title">他にはこんなサービスも！</p>
-                <ul>
-                    <li><a href="#" target="_blank">ギフトカード</a></li>
-                    <li><a href="#" target="_blank">一蘭公式アプリ</a></li>
-                    <li><a href="#" target="_blank">ふるさと納税</a></li>
-                </ul>
-            </div>
+      <div class="footer-inner">
+        <div class="footer-logo-info">
+          <img
+            src="img/ichiran_logomark_r 1.png"
+            alt="一蘭"
+            class="footer-logo"
+          />
+          <p>
+            株式会社一蘭 1960年（昭和35年）<br />〒810-0801
+            福岡市博多区中洲5-3-2 一蘭本社ビル
+          </p>
+          <div class="sns-icons">
+            <img src="img/SNSｓ.png" alt="SNSアイコン" />
+          </div>
         </div>
-        <p class="copyright">© 2026 Ichiran Co., Ltd. All Rights Reserved.</p>
+        <div class="footer-links">
+          <p class="links-title">他にはこんなサービスも！</p>
+          <ul>
+            <li><a href="#" target="_blank">ギフトカード</a></li>
+            <li><a href="#" target="_blank">一蘭公式アプリ</a></li>
+            <li><a href="#" target="_blank">ふるさと納税</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Ichiran Co., Ltd. All Rights Reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
