@@ -417,37 +417,37 @@ body {
   margin: 40px auto;
 }
 
-.news__title {
+.news-title {
   font-family: "Noto Serif", serif;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.news__list {
+.news-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.news__item {
+.news-item {
   display: flex;
   align-items: center;
   padding: 12px 0;
   border-bottom: 1px solid #999;
 }
 
-.news__date {
+.news-date {
   width: 200px;
   font-weight: bold;
 }
 
-.news__content {
+.news-content {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.news__tag {
+.news-tag {
   background: #e74c3c;
   color: #fff;
   font-size: 12px;
@@ -455,18 +455,18 @@ body {
   border-radius: 3px;
 }
 
-.news__store {
+.news-store {
   background: #000;
   color: #fff;
   padding: 4px 8px;
   font-size: 13px;
 }
 
-.news__text {
+.news-text {
   font-size: 14px;
 }
 
-.news__more {
+.news-more {
   text-align: center;
   margin-top: 20px;
   cursor: pointer;
