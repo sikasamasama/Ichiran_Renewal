@@ -25,6 +25,95 @@ small {
 
 
 /* --- フッター --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E9DBBF;
+}
+
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 70px auto 0;
+  padding: 0 70px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+header h1 {
+  line-height: 1;
+}
+
+/* ハンバーガーボタン */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #fff;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+/* 開いたときの × アニメーション */
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ナビゲーション（デフォルトは非表示） */
+.nav {
+  display: none;
+  position: absolute; /* headerのレイアウトに影響させない */
+  top: 100%;
+  right: 0;
+}
+.nav.open {
+  display: block;
+}
+
+.nav.open li{
+  list-style-type: none;
+}
+
+.nav.open a{
+  color: #fff;
+  text-decoration: none;
+  
+}
+
 .main-footer {
     background-color: #ad8b65; /* フッターの茶色 */
     color: #fff;
