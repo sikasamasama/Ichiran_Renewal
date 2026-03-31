@@ -6,6 +6,7 @@
 
 body {
   background-color: #E9DBBF;
+  overflow-x: hidden;
 }
 
 .header-wrapper {
@@ -113,8 +114,7 @@ header h1 {
 }
 
 #first {
-  width: 500px;
-  max-width: 890px;
+  width: 100%;
   margin: 105px auto;
   text-align: center;
 }
@@ -131,6 +131,7 @@ header h1 {
   max-width: 840px;
   font-size: 18px;
   line-height: 60px;
+  text-align: center;
 }
 
 #first p span {
@@ -155,18 +156,21 @@ iframe {
 
 #menu{
   position: relative;
+  display: flex;
+  justify-content: center;
   margin: 200px auto;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1440px;
   height: 400px;
+  gap: 100px;
+
 }
 
 .hands {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  transform: translate(-50%, -50%);
+  
+  /* position: absolute;
+  top: 50%; */
+  
     width: 100%;
     max-width: 550px;
     height: 400px;
@@ -176,13 +180,13 @@ iframe {
 }
 
 #menu .menu-text {
-  /* position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 36px;
-  bottom: 30px; */
-  position: absolute;
+  bottom: 30px;
+  /* position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +195,7 @@ iframe {
   max-width: 580px;
   top: 50%;
   left: 32%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 #menu .menu-text h2 {
