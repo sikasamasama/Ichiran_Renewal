@@ -110,11 +110,10 @@ header h1 {
 
 .fv img {
   width: 100%;
-  max-width: 1440px;
 }
 
 #first {
-  width: 100%;
+  width: 500px;
   max-width: 890px;
   margin: 105px auto;
   text-align: center;
@@ -143,7 +142,6 @@ header h1 {
 
 .movie {
   width: 100%;
-  max-width: 1440px;
   display: flex;
   justify-content: center;
 }
@@ -156,14 +154,19 @@ iframe {
 }
 
 #menu{
+  position: relative;
   margin: 200px auto;
-  display: flex;
-  justify-content: center;
   width: 100%;
-  gap: 30px;
+  max-width: 1300px;
+  height: 400px;
 }
 
 .hands {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
     width: 100%;
     max-width: 550px;
     height: 400px;
@@ -173,15 +176,26 @@ iframe {
 }
 
 #menu .menu-text {
-  position: relative;
+  /* position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 36px;
-  bottom: 30px;
+  bottom: 30px; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  width: 100%;
+  max-width: 580px;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
 }
 
 #menu .menu-text h2 {
+  display: inline;
   font-family: 'Noto Serif', serif;
   font-size: 36px;
 }
@@ -238,7 +252,7 @@ iframe {
   width: 100%;
   max-width: 580px;
   top: 50%;
-  left: 30%;
+  left: 35%;
   transform: translate(-50%, -50%);
 }
 
