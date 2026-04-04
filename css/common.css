@@ -22,10 +22,6 @@ small {
     font-size: 16px;
 }
 
-
-
-/* --- フッター --- */
-
 * {
   margin: 0;
   padding: 0;
@@ -51,8 +47,6 @@ header {
   width: 100%;
   margin: 70px auto 0;
   padding: 0 70px;
-  /* left: 50%;
-  transform: translateX(-50%); */
 }
 
 header h1 {
@@ -130,19 +124,19 @@ header h1 {
 
 .hamburger {
   position: relative;
-  z-index: 1100; /* nav-warpより前面に */
+  z-index: 1100; 
 }
 
 .nav-warp {
-  position: absolute;
+  position: fixed;
   top: -70px;
   bottom: 70px;
-  right: 0;        /* leftからrightに変更 */
+  right: 0;       
   width: 33.333vw;
   height: 100vh;
   background-color: rgba(33, 33, 33, 0.85);
   z-index: 1050;
-  transform: translateX(100%);   /* 100%に変更（右に隠す） */
+  transform: translateX(100%);  
   transition: transform 0.4s ease;
   display: flex;
   flex-direction: column;
@@ -160,14 +154,14 @@ header h1 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 1040; /* nav-warpより後ろ、headerより前 */
+  z-index: 1040; 
 }
 
 .nav-overlay.open {
   display: block;
 }
 
-/* navはdisplay:noneをやめてdrawer内で常に表示 */
+
 .nav {
   display: block;
   position: static;

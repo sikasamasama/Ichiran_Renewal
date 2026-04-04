@@ -6,7 +6,7 @@
 
 body {
   background-color: #e9dbbf;
-  overflow-x: hidden;
+  
 }
 
 
@@ -28,7 +28,8 @@ body {
 .fv .ttl h1 {
   font-size: 48px;
   color: #fff;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
+  line-height: 70px;
 }
 
 .fv img {
@@ -36,9 +37,6 @@ body {
 }
 
 #first {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   width: fit-content;
   margin: 105px auto;
   text-align: center;
@@ -90,9 +88,6 @@ iframe {
 }
 
 .hands {
-  /* position: absolute;
-  top: 50%; */
-
   width: 100%;
   max-width: 550px;
   height: 400px;
@@ -109,16 +104,6 @@ iframe {
   gap: 36px;
   bottom: 30px;
   padding-left: 10%;
-  /* position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 36px;
-  width: 100%;
-  max-width: 580px;
-  top: 50%;
-  left: 32%;
-  transform: translate(-50%, -50%); */
 }
 
 #menu .menu-text h2 {
@@ -220,7 +205,6 @@ iframe {
   gap: 0;
 }
 
-/* 左側：カテゴリー */
 .faq-sidebar {
   background: transparent;
   padding: 20px 0;
@@ -262,7 +246,6 @@ iframe {
   color: #000;
 }
 
-/* 右側：質問リスト */
 .faq-content {
   padding: 20px 40px;
 }
@@ -303,9 +286,6 @@ iframe {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition:
-    max-height 0.3s ease-out,
-    padding 0.3s ease-out;
   padding: 0 20px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 0 0 8px 8px;
