@@ -2,14 +2,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Hiragino Mincho ProN", serif;    background-color: #E9DBBF; 
+    background-color: #E9DBBF; 
     color: #333;
     line-height: 1.6;
 }
 
-h1, h2, h3, li, a, span, button {
-    font-weight: bold;
-}
 
 /* ヘッダー全体の親要素 */
 .main-header {
@@ -84,7 +81,6 @@ h1, h2, h3, li, a, span, button {
 .hero-title-area h1 {
     font-size: 3.5rem;
     color: #000;
-    font-family: "Hiragino Mincho ProN", serif;
     font-weight: normal;
     margin: 0;
     padding-left: 20px; 
@@ -119,7 +115,7 @@ h1, h2, h3, li, a, span, button {
 
 .menu-list-section {
     position: relative;
-    background-image: url('image_9.png'), url('image_9.png');
+    background-image: url('../img/image_9.png'), url('../img/image_9.png');
     background-position: left top, right top;
     background-repeat: repeat-y, repeat-y;
     padding: 0 50px; /* 雷紋がコンテンツにかぶらないように余白 */

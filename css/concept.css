@@ -21,6 +21,10 @@ small {
     font-size: 16px;
 }
 
+.no-break {
+    white-space: nowrap;
+}
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 #concept {
@@ -46,6 +50,7 @@ small {
             background-size: cover;
             z-index: -1;
             opacity: 0.2;
+            background-position: center;
         }
     }
 
@@ -60,17 +65,24 @@ small {
 
         p {
             line-height: 40px;
+            width: fit-content;
+            min-width: 710px;
+            margin: 0 auto;
 
-            span {
+            .emphasis {
+                color: #CF2807;
+                font-family: Inter;
                 font-size: 32px;
-                font-weight: 400;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px;
             }
         }
     }
 
     .ganso {
         margin: 0 auto 200px;
-        width: 90%;
+        width: 100%;
         max-width: 1132px;
         height: 827px;
         position: relative;
@@ -94,6 +106,7 @@ small {
             inset: 0;
             background-image: url(../img/donburi.png);
             background-repeat: no-repeat;
+            background-position: center center;
             z-index: -1;
         }
 
@@ -108,12 +121,13 @@ small {
             align-items: center;
         }
 
-        .last-accordion>button{
+        .last-accordion>button {
             border: none;
         }
 
         .title {
             margin-left: 20px;
+            font-family: "Noto Serif", serif;
         }
 
         .icon {
@@ -123,8 +137,9 @@ small {
     }
 
     .soup {
-        max-width: 1300px;
+        max-width: 1313px;
         margin: 0 auto;
+        padding: 0 5%;
 
         h2 {
             text-align: center;
@@ -136,10 +151,11 @@ small {
             display: grid;
             grid-template-areas: "img Headline"
                 "img text";
-            grid-template-columns: minmax(200px, 421px) minmax(0, 1fr);
-            gap: 15px 100px;
+            grid-template-columns: auto auto;
+            gap: 15px 3%;
             width: 100%;
             max-width: 1078px;
+            justify-content: start;
 
             img {
                 grid-area: img;
@@ -163,8 +179,7 @@ small {
         .soup-ladle {
             grid-template-areas: "Headline img"
                 "text img";
-            grid-template-columns: minmax(0, 1fr) minmax(200px, 421px);
-            justify-self: end;
+            justify-content: end;
             margin-bottom: 105px;
         }
     }
@@ -172,10 +187,10 @@ small {
     .forest {
         /* background-color: rgba(0, 255, 0, 0.5); */
         margin: 200px auto 105px;
-        width: 1300px;
-        height: 409px;
+        max-width: 1300px;
+        width: 100%;
         position: relative;
-        padding: 86px 83px 78px;
+        padding: 4% 83px;
 
         button {
             font-size: 18px;
@@ -188,6 +203,9 @@ small {
             background-image: url(../img/ichiran-forest.png);
             z-index: -1;
             opacity: 0.3;
+            background-size: cover;
+            background-position: right;
+            height: 120%;
         }
 
         h2 {
@@ -237,7 +255,7 @@ small {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 176px 0 0 192px;
+    padding: 140px 0 0 15%;
     position: relative;
     z-index: 2;
 
@@ -258,14 +276,14 @@ small {
     line-height: 1;
     color: white;
     position: absolute;
-    right: 130px;
-    top: 180px;
+    right: 15%;
+    top: 140px;
     z-index: 2;
     text-align: center;
 }
 
 .detail-body {
-    padding: 54px 0 0 192px;
+    padding: 54px 0 0 15%;
     color: white;
     font-size: 18px;
     position: relative;
