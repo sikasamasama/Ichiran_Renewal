@@ -82,7 +82,7 @@ h1, h2, h3, li, a, span, button {
     font-size: 3.0rem;
     color: #000; 
     font-family: "Hiragino Mincho ProN", serif;
-    margin-bottom: 26%;
+    margin-bottom: 5%;
 }
 
 
@@ -96,7 +96,7 @@ h1, h2, h3, li, a, span, button {
 .shop-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 21% 5% 8%; 
+    padding: 140px 5% 8%; 
     box-sizing: border-box;
 }
 
