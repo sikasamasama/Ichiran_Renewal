@@ -70,8 +70,12 @@ small {
             margin: 0 auto;
 
             .emphasis {
+                color: #CF2807;
+                font-family: Inter;
                 font-size: 32px;
-                font-weight: 400;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px;
             }
         }
     }
@@ -123,6 +127,7 @@ small {
 
         .title {
             margin-left: 20px;
+            font-family: "Noto Serif", serif;
         }
 
         .icon {
