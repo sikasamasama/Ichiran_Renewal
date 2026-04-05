@@ -36,7 +36,7 @@ body {
 }
 
 .header-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -219,9 +219,10 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.sns-icons img {
-    height: 30px; /* SNSアイコンの高さ */
-    width: auto;
+.sns-icons {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
 }
 
 .footer-links .links-title {
